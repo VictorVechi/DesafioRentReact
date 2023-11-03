@@ -12,7 +12,7 @@ export const StyleForm = styled.form`
     -webkit-backdrop-filter: blur(12px);
     background-color: ${(props)=>props.theme.blackOpacidade};
     box-shadow: -4px -4px 8px 0px rgba(0, 0, 0, 0.25), 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
-    
+    padding: 20px;
     h2, h3{
         color: ${(props)=>props.theme.orangeRent};
     }
