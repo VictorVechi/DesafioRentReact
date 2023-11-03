@@ -14,7 +14,6 @@ const Form = () => {
   const [arCondicionado, setArCondicionado] = useState(false)
 
   const handleCadastroVeiculo = async (e)=>{
-    // e.preventDefault()
     const data = {
       locadora: locadora,
       modelo: modelo,
@@ -25,6 +24,15 @@ const Form = () => {
       cambio: cambio,
       ar_condicionado: arCondicionado
     }
+
+    if(!locadora || !modelo || !marca || !ano || !motor || !portas || !cambio){
+      e.preventDefault()
+      const elemento = document.getElementsByTagName('h3')[0]
+      elemento.innerHTML = 'Preencha todos os campos'
+      elemento.style.color = 'red'
+      return
+    }
+
     const response = await postVeiculo(data)
   }
 
