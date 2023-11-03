@@ -36,4 +36,10 @@ export const StyleHeader = styled.header`
     .item:hover{
         color: ${(props)=>props.theme.orangeRent};
     }
+
+    @media (max-width: 768px) {
+        .titulo {
+            display: none;
+        }
+    }
 `

@@ -21,4 +21,9 @@ export const StyleForm = styled.form`
         color: ${(props)=>props.theme.white};
     }
 
+
+    @media (max-width: 768px) {
+        width: 90%;
+        height: 90%;
+    }
 `
