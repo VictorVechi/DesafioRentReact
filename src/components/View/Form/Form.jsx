@@ -7,7 +7,7 @@ const Form = () => {
   const [locadora, setLocadora] = useState('')
   const [modelo, setModelo] = useState('')
   const [marca, setMarca] = useState('')
-  const [ano, setAno] = useState(1998)
+  const [ano, setAno] = useState(2019)
   const [motor, setMotor] = useState('')
   const [portas, setPortas] = useState(2)
   const [cambio, setCambio] = useState('')
