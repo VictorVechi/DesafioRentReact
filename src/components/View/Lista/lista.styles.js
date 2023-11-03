@@ -10,4 +10,33 @@ export const StyleLista = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+
+
+    ul {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid ${(props)=>props.theme.orangeRent};
+    }
+
+    li {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    @media (max-width: 768px) {
+        gap: 5px;
+        font-size: 5px;
+        h2 {
+            font-size: 20px;
+        }
+        ul {
+            width: 100%;
+        }
+
+    }
 `
