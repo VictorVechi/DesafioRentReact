@@ -7,7 +7,7 @@ export const StyleHeader = styled.header`
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0px 30px 0px;
     background-color: ${(props)=>props.theme.black};
@@ -15,26 +15,18 @@ export const StyleHeader = styled.header`
 
     .titulo{
         cursor: pointer;
+        transition: 0.3s;
     }
 
     .titulo span {
         color: ${(props)=>props.theme.orangeRent};
+        transition: 0.3s;
     }
-
-    .lista {
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
-
-    .item {
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    .item:hover{
+    .titulo:hover {
         color: ${(props)=>props.theme.orangeRent};
+        span {
+            color: ${(props)=>props.theme.white};
+        }
     }
 
     @media (max-width: 768px) {
