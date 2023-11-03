@@ -15,7 +15,7 @@ const Field = ({value,check, nomeInput, textoLabel, tipo, textoInput, classe,val
     
     <StyleField>
         <label htmlFor={nomeInput}>{textoLabel}</label>
-        <input checked={check} value={value} className={classe} min={valorMinimo} max={valorMaximo} name={nomeInput} type={tipo} placeholder={textoInput} required onChange={func}/>
+        <input checked={check} value={value} className={classe} min={valorMinimo} max={valorMaximo} name={nomeInput} type={tipo} placeholder={textoInput} onChange={func}/>
         
     </StyleField>
   )
