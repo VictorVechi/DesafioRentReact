@@ -12,6 +12,9 @@ export const StyleLista = styled.div`
     align-items: center;
     gap: 15px;
 
+    .atualiza-lista {
+        width: 20%;
+    }
 
     ul {
         width: 85%;

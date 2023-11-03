@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { StyleLista } from './lista.styles'
 import Veiculo from '../Veiculo/Veiculo'
 import { getVeiculos } from '../../../services/api'
+import Button from '../../common/Button/Button'
 
 const Lista = ({idSection}) => {
   const [listaVeiculos, setListaVeiculos] = useState([])
@@ -18,6 +19,7 @@ const Lista = ({idSection}) => {
   return (
     <StyleLista id={idSection}>
         <h2>Lista de veículos</h2>
+        <Button texto={'Atualizar'} classe={'atualiza-lista'} func={handleBuscaVeiculos}/>
         <ul>
           <li>Locadora</li>
           <li>Modelo</li>
@@ -42,6 +44,7 @@ const Lista = ({idSection}) => {
             portas={veiculo.portas}
             cambio={veiculo.cambio}
             ar_condicionado={veiculo.ar_condicionado}
+            setListaVeiculo={setListaVeiculos}
             />
         ))}
     </StyleLista>
