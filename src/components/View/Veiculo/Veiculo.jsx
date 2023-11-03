@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { StyleVeiculo } from './veiculo.style'
 import Button from '../../common/Button/Button'
-import { deleteVeiculo, getVeiculoPorId, putVeiculo } from '../../../services/api'
+import { deleteVeiculo, getVeiculoPorId, getVeiculos, putVeiculo } from '../../../services/api'
 import Modal from '../../common/Modal/Modal'
 import Field from '../../common/Field/Field'
 
-const Veiculo = ({id, locadora, modelo, marca, ano, motor, portas, cambio, ar_condicionado}) => {
+const Veiculo = ({id, locadora, modelo, marca, ano, motor, portas, cambio, ar_condicionado, setListaVeiculo}) => {
     const [notificacao, setNotificacao] = useState(false)
     const [modalOpen, setModalOpen] = useState(false)
     const arCondicionado = ar_condicionado? 'sim':'não'
@@ -24,7 +24,8 @@ const Veiculo = ({id, locadora, modelo, marca, ano, motor, portas, cambio, ar_co
         const response = await deleteVeiculo(id)
         setNotificacao(true)
         setTimeout(()=>{setNotificacao(false)}, 2000)
-        location.reload()
+        const responseVeiculos = await getVeiculos()
+        setTimeout(()=>{setListaVeiculo(responseVeiculos)}, 1000)
     }
 
     const modalEditarVeiculo = async ()=>{
