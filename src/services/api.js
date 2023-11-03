@@ -13,7 +13,7 @@ export const getVeiculos = async () => {
         const response = await api.get('/veiculos');
         return response.data;
     } catch (error) {
-        console.error(error);
+        return []
     }
 }
 
