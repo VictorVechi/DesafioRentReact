@@ -35,5 +35,9 @@ export const StyleCadastroVeiculo = styled.div`
     color: ${(props)=>props.theme.white};
 }
 
-    
+@media (max-width: 768px) {
+        .section-form {
+            height: 70%;
+        }
+    }
 `
