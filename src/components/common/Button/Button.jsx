@@ -1,9 +1,9 @@
 import React from 'react'
 import { StyleButton } from './button.styles'
 
-const Button = ({texto, tipo, func}) => {
+const Button = ({classe, texto, tipo, func}) => {
   return (
-    <StyleButton type={tipo} onClick={func}>{texto}</StyleButton>
+    <StyleButton className={classe} type={tipo} onClick={func}>{texto}</StyleButton>
   )
 }
 
