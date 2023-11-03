@@ -12,6 +12,11 @@ html,
 :root {
   width: 100%;
   min-height: 100vh;
+  
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 button,
