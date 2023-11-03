@@ -17,7 +17,6 @@ export const StyleCadastroVeiculo = styled.div`
 }
 
 .section-veiculos {
-    height: auto;
     background-color: ${(props)=>props.theme.black};
     display: flex;
     flex-direction: column;
