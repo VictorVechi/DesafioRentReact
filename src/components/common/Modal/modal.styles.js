@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StylesModal = styled.div`
   width: 100%;
-  height: 90%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@ export const StylesModal = styled.div`
 
 export const StylesContentModal = styled.div`
   display: flex;
-  width: 401px;
+  width: 400px;
   padding: 24px;
   flex-direction: column;
   justify-content: center;
@@ -27,11 +27,16 @@ export const StylesContentModal = styled.div`
   input{
     padding: 10px;
     border-radius: 8px;
+    text-align: center;
   }
 
   label {
-    font-size: 18px;
+    font-size: 16px;
     color: ${(p) => p.theme.white};
+    font-weight: 600;
+    background-color: ${(p) => p.theme.blackOpacidade};
+    width: 50%;
+    border-radius: 16px;
   }
 
   button {
