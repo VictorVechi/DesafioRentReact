@@ -31,7 +31,7 @@ Foi utilizado no projeto as stacks a seguir:
 1. Para o projeto funcionar corretamente é necessário que a API desenvolvida na parte anterior esteja executando, para isso basta seguir os passos do README.md da API que se encontra em:
 
 ```bash
-$ https://github.com/VictorVechi/DesafioRentAPI
+https://github.com/VictorVechi/DesafioRentAPI
 ```
 
 
